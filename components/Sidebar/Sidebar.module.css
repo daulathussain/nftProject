@@ -1,0 +1,109 @@
+.sidebar{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    background-color: #fff;
+    border: 1px solid #DADCE1;
+    width: 18rem;
+    z-index: 1000;
+    padding: 2rem 1rem;
+
+    overflow-y: scroll;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+  }
+
+.closeBtn{
+    position: absolute;
+    right: 2rem;
+    font-size: 1.2rem;
+}
+
+.sidebar p{
+    font-size: 10px;
+    font-weight: 600;
+
+}
+
+.social{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #DADCE1;
+    padding-bottom: 1.5rem;
+}
+
+.social__list{
+    display: flex;
+    gap: .5rem;
+}
+
+.box{
+    border-bottom: 1px solid #DADCE1;
+    padding-bottom: 1rem;
+}
+
+.descover__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.descover p{
+    font-size: .8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #3f3f41;
+    padding-block: .5rem ;
+    cursor: pointer;
+}
+.descover__list{
+    margin-left: 1rem;
+}
+
+.menuList{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+.menuItem{
+    margin-top: .3rem;
+}
+
+.menuList  a{
+    text-decoration: none;
+    color: #3f3f41;
+    font-size: .8rem;
+}
+
+/* ///////////////////////
+ */
+
+ .groupBtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+ }
+
+ .btnTransprant{
+    border-bottom: 1px solid #DADCE1;
+    background: transparent;
+}
+
+/* .overlay{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: .1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+} */

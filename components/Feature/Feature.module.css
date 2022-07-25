@@ -1,0 +1,72 @@
+
+.div{
+    background-color: #F7F7F9;
+}
+
+
+
+.feature{
+    width: 80%;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+.feature h2{
+    font-size: 2.5rem;
+}
+.filterBox{
+    padding: 2rem 0;
+}
+
+.filterList{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.activeTab{
+    background-color: #E2F2FD;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    font-weight: 700;
+}
+
+.cardGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+/* //////////////////////////////// */
+
+@media screen  and (max-width: 65em){
+    .feature{
+        width: 93%;
+        
+    }
+}
+
+@media screen  and (max-width: 55em){
+    .cardGrid{
+        grid-template-columns: 1fr 1fr
+    }
+    .feature{
+        width: 93%;
+        
+    }
+}
+
+@media screen  and (max-width: 35em){
+    .cardGrid{
+        grid-template-columns: 1fr
+    }
+    .feature{
+        width: 93%; 
+    }
+    
+}
+
+
+
+
+

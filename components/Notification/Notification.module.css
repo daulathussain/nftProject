@@ -1,0 +1,59 @@
+
+.notification{
+    position: absolute;
+    width: 18rem;
+    height: 10rm;
+    border: 1px solid #DADCE1;
+    top: 2rem;
+    left: -17rem;
+    padding: 1rem;
+    border-radius: .3rem;
+    z-index: 201;
+    background-color: #fff;
+}
+
+.notification h4{
+    margin-bottom: 1rem;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.list .image{
+    border-radius: 50%;
+}
+
+.message h5{
+    margin: 0;
+    line-height: 2;
+}
+.message p{
+    font-size: 10px;
+    margin-bottom: -.4rem;
+}
+.message small{
+    font-size: 10px;
+    
+}
+
+
+
+
+@media screen and (max-width: 35em) {
+    .notification{
+        right: -rem;
+        
+        width: 15rem;
+    }
+}
+
+
+@media screen and (max-width: 50em) {
+    .notification{
+        left: -8rem;
+    }
+}

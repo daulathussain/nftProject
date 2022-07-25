@@ -1,0 +1,35 @@
+
+.hero{
+    width: 80%;
+    margin: 0 auto;
+    
+
+    display: grid;
+    gap: 2rem;
+    margin-block: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.right{
+    display: grid;
+    place-content: center;
+    gap: 1rem;
+    
+}
+
+.right h1{
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.right p{
+    width: 80%;
+    font-size: 12px;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 35em) {
+    .hero{
+        grid-template-columns:  1fr;
+    }
+}

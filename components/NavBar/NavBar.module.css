@@ -1,0 +1,176 @@
+
+.navigation{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    margin-block: .9rem;
+    
+}
+
+.navigation__left{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.input{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: 1px solid #DADCE1;
+    padding: .4rem 2rem;
+    border-radius: 1rem;
+}
+
+.input input{
+    border: none;
+    outline: none;
+    font-size: .7rem;
+}
+
+/* //////////////////////////////// */
+
+.icon{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.icon:hover{
+    background-color: #9da4b01b;
+    border-radius: 2rem;
+}
+
+.navigation__right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.box{
+    display: flex;
+    z-index: 100;
+    
+}
+
+.dropDown{
+    display: grid;
+    position: relative;
+    
+}
+
+.dropDown__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    
+}
+
+.dropDown__title:hover{
+    background-color: #9da4b01b;
+    border-radius: 2rem;
+}
+
+
+
+.dropDown__title p{
+    margin-right: .3rem;
+}
+
+.menuList{
+    position: absolute;
+    margin-top: 2.5rem;
+    margin-left: 1rem;
+    border: 1px solid #DADCE1;
+    padding: 1rem .4rem;
+    width: 12rem;
+    border-radius: 4px;
+    background-color: #fff;
+
+}
+
+
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu_item{
+   padding: .2rem 1rem;
+   border-radius: 5px;
+}
+
+.menu_item:hover{
+    background-color: #9da4b01b;
+
+}
+
+.menu_item a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #3f3f41;
+}
+
+.notification_box{
+    display: grid;
+    position: relative;
+}
+
+.profile{
+    display: grid;
+    cursor: pointer;
+    position: relative;
+}
+.picture{
+    border-radius: 50%;
+}
+
+.menuIcon{
+    display: none;
+    font-size: 1.5rem;
+    margin-top: .8rem;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    z-index: 23;
+    opacity: .4;
+    cursor: pointer;
+}
+
+/* ////////////////////////////////////////// */
+
+@media screen and (max-width: 65em) {
+    .dropDown{
+        display: none;
+    }
+    .menuIcon{
+        display: block;
+    
+    }
+}
+@media screen and (max-width: 50em) {
+    .input{
+        display: none;
+    }
+    .menuIcon{
+        display: block;
+    
+    }
+}
+
+@media screen and (max-width: 35em) {
+    .button{
+        display: none;
+    }
+    .menuIcon{
+        display: block;
+    }
+}

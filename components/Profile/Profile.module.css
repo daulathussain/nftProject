@@ -1,0 +1,60 @@
+
+.profile{
+    position: absolute;
+    top: 3rem;
+    border: 1px solid #DADCE1;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    left: -11rem;
+    background-color: #fff;
+    width: 13rem;
+    z-index: 100;
+}
+
+.account{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid #DADCE1;
+    padding-bottom: 1rem;
+}
+
+.image{
+    border-radius: 50%;
+}
+
+.accountDetainls{
+    display: grid;
+}
+.accountDetainls p{
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.accountDetainls small{
+    font-size: 10px;
+}
+
+.menuList{
+    padding: .5rem 0;
+    /* border-bottom:1px solid #DADCE1; */
+   
+}
+.userPage{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.userPage a{
+    font-size: 12px;
+    text-decoration: none;
+    padding: .3rem 0;
+    color: #3f3f41;
+    font-weight: 600;
+    
+}
+
+.line{
+    padding: 1rem 0;
+    border-top: 1px solid #DADCE1;
+}

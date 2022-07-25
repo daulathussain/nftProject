@@ -1,0 +1,64 @@
+/* //////////////////////////////////////////// */
+.sales{
+    position: absolute;
+    top: 3rem;
+    z-index: 1123;
+    width: 20rem;
+    background-color: #fff;
+    box-shadow:  20px 20px 60px #d2d2d4,
+                -20px -20px 60px #ffffff;
+                border-radius: 1rem;
+    padding-block: 1rem;
+}
+
+.nftFilter{
+    padding: 1rem;
+    margin-bottom: -.5rem;
+    
+}
+
+.nftFilter__input{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.label{
+    position: relative;
+    padding-left: 3rem;
+    cursor: pointer;
+}
+
+.checkBox{
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 2px solid #199be1;
+    border-radius: .2rem;
+    display: inline-block;
+    position: absolute;
+    top: -.1rem;
+    left: 0;
+}
+
+.checkBox::after{
+    height: .8rem;
+    width: .8rem;
+    content: '';
+    border-radius: .2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #199be1;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.input_check{
+    display: none;
+}
+
+.input_check:checked ~ .label .checkBox::after {
+  opacity: 1;
+}

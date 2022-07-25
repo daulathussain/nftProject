@@ -1,0 +1,108 @@
+
+.filter{
+margin-block: 2rem;
+}
+
+.filterBox{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.filterList{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    cursor: pointer;
+}
+
+.Button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    border: none;
+    background-color: #199be1;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    color: #fff;
+}
+
+.Button__space{
+    padding: 0 1rem;
+}
+
+/* ////////////////////////////////////// */
+
+.dropDown{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    border-top: 1px solid#DADCE1;
+    padding-top: 2rem;
+}
+
+.dropDown__option{
+    position: relative;
+}
+
+.dropDown__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .2rem .5rem;
+    font-size: 12px;
+    border-radius: .8rem;
+    border: 1px solid #DADCE1;
+    cursor: pointer;
+}
+
+.button__name{
+    padding-inline: .5rem;
+}
+
+
+.dropDown__option:first-child button{
+    background-color: #199be10e;
+    border: 1px solid #199be1;
+}
+.dropDown__option:last-child button{
+    background-color: #199be10e;
+    border: 1px solid #199be1;
+}
+
+/* ::-webkit-scrollbar {
+  width: 20px;
+} */
+/* /////////////////////////////////////////// */
+
+@media screen and (max-width: 35em){
+    .filterBox{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        
+    }
+    .filterList{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-content: center;
+    }
+
+    .dropDown{
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+
+    /* .dropDown::-webkit-scrollbar {
+        width: 20px;
+      }  */
+
+    .dropDown__button{
+        width: 13rem;
+        padding: .5rem 0rem;
+        border-radius: 2rem;
+    }
+}
